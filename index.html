@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gwenevere "Mia" Hubbard — MarTech, Digital Transformation &amp; AI-Forward Program Leader</title>
+<meta name="description" content="MarTech, digital transformation, and AI-forward program leader with 12+ years delivering CDP, CRM, and platform programs. Explore my experience and STAR stories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1E3A5F; --navy-dark:#152C49; --navy-deep:#0F2136;
+  --gold:#C9A84C; --gold-light:#E3C97A; --cream:#FAF6EE;
+  --ink:#22303F; --muted:#5D6B7A; --white:#FFFFFF;
+  --serif:'Playfair Display',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6}
+img{max-width:100%}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+h2.sec-title{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.6rem);color:var(--navy);margin-bottom:8px}
+.sec-kicker{color:var(--gold);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;margin-bottom:10px}
+.sec-sub{color:var(--muted);max-width:640px;margin-bottom:40px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(15,33,54,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,168,76,.25)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:var(--serif);font-weight:700;color:var(--cream);font-size:1.15rem;text-decoration:none}
+.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{color:#D8DEE6;text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.menu-btn{display:none;background:none;border:none;color:var(--cream);font-size:1.5rem;cursor:pointer}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;background:
+  radial-gradient(1100px 500px at 85% -10%,rgba(201,168,76,.18),transparent 60%),
+  radial-gradient(800px 600px at -10% 110%,rgba(201,168,76,.10),transparent 55%),
+  linear-gradient(160deg,var(--navy-deep) 0%,var(--navy) 70%,var(--navy-dark) 100%);
+  position:relative;overflow:hidden;padding:120px 0 80px}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(201,168,76,.14) 1px,transparent 1px);background-size:34px 34px;pointer-events:none}
+.hero .wrap{position:relative;z-index:2}
+.hero-kicker{color:var(--gold-light);letter-spacing:.2em;text-transform:uppercase;font-size:.8rem;font-weight:600;margin-bottom:18px;opacity:0;animation:rise .8s .1s forwards}
+.hero h1{font-family:var(--serif);color:var(--white);font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.12;max-width:820px;opacity:0;animation:rise .8s .25s forwards}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p.lede{color:#C9D3DE;font-size:clamp(1rem,2vw,1.2rem);max-width:640px;margin:22px 0 34px;opacity:0;animation:rise .8s .4s forwards}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:rise .8s .55s forwards}
+.btn{display:inline-block;padding:13px 26px;border-radius:6px;font-weight:600;text-decoration:none;font-size:.95rem;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--navy-deep)}
+.btn-gold:hover{box-shadow:0 8px 24px rgba(201,168,76,.35)}
+.btn-ghost{border:1px solid rgba(201,168,76,.6);color:var(--gold-light)}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:64px;opacity:0;animation:rise .8s .7s forwards}
+.stat{border-left:2px solid var(--gold);padding-left:16px}
+.stat .num{font-family:var(--serif);color:var(--white);font-size:clamp(1.5rem,3vw,2.1rem);font-weight:700}
+.stat .lbl{color:#9FB0C1;font-size:.8rem;margin-top:2px}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+/* LOGO TICKER */
+.ticker-band{background:var(--navy-deep);padding:26px 0;border-top:1px solid rgba(201,168,76,.2);overflow:hidden}
+.ticker-label{text-align:center;color:#8FA0B2;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px}
+.ticker{display:flex;width:max-content;animation:scroll 28s linear infinite}
+.ticker:hover{animation-play-state:paused}
+.ticker span{font-family:var(--serif);color:var(--gold-light);font-size:1.05rem;font-weight:600;padding:0 34px;white-space:nowrap;opacity:.85}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start}
+.portrait{width:180px;height:180px;border-radius:50%;border:4px solid var(--gold);margin-bottom:24px;overflow:hidden;position:relative;background:var(--navy);box-shadow:0 14px 34px rgba(30,58,95,.25)}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.portrait .ph-init{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:3rem;color:var(--gold-light);font-weight:700}
+.portrait.has-img .ph-init{display:none}
+.about-copy p{margin-bottom:16px;color:#3B4757}
+.about-card{background:var(--navy);border-radius:12px;padding:30px;color:#D8DEE6;box-shadow:0 20px 50px rgba(30,58,95,.25)}
+.about-card h3{font-family:var(--serif);color:var(--gold-light);margin-bottom:14px;font-size:1.15rem}
+.about-card ul{list-style:none}
+.about-card li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.92rem;display:flex;gap:10px}
+.about-card li:last-child{border:none}
+.about-card li::before{content:"◆";color:var(--gold);font-size:.7rem;margin-top:5px}
+
+/* EXPERIENCE TIMELINE */
+#experience{background:var(--white)}
+.timeline{position:relative;margin-top:12px}
+.timeline::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--gold),var(--navy))}
+.tl-item{position:relative;padding:0 0 42px 44px}
+.tl-item::before{content:"";position:absolute;left:0;top:6px;width:20px;height:20px;border-radius:50%;background:var(--cream);border:4px solid var(--gold)}
+.tl-role{font-family:var(--serif);font-size:1.25rem;color:var(--navy);font-weight:700}
+.tl-org{color:var(--gold);font-weight:600;font-size:.95rem;margin:2px 0}
+.tl-dates{color:var(--muted);font-size:.83rem;margin-bottom:10px}
+.tl-item ul{list-style:none}
+.tl-item li{position:relative;padding:4px 0 4px 20px;color:#3B4757;font-size:.94rem}
+.tl-item li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+
+/* STAR SECTION */
+#stars{background:linear-gradient(180deg,var(--navy-deep),var(--navy))}
+#stars .sec-kicker{color:var(--gold-light)}
+#stars h2.sec-title{color:var(--white)}
+#stars .sec-sub{color:#AEBBCA}
+.star-legend{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.star-legend span{color:#C9D3DE;font-size:.82rem}
+.star-legend b{color:var(--gold)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px}
+.filter-btn{background:transparent;border:1px solid rgba(201,168,76,.5);color:#D8DEE6;padding:8px 18px;border-radius:999px;cursor:pointer;font-family:var(--sans);font-size:.85rem;transition:all .2s}
+.filter-btn:hover{border-color:var(--gold)}
+.filter-btn.active{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);font-weight:600}
+.star-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
+.star-card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 12px 34px rgba(0,0,0,.28);transition:transform .25s;display:flex;flex-direction:column}
+.star-card:hover{transform:translateY(-4px)}
+.star-head{padding:22px 24px 16px;cursor:pointer}
+.star-tag{display:inline-block;background:rgba(30,58,95,.08);color:var(--navy);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:12px}
+.star-head h3{font-family:var(--serif);color:var(--navy);font-size:1.12rem;line-height:1.35}
+.star-metric{color:var(--gold);font-weight:700;font-size:1.5rem;font-family:var(--serif);margin-top:8px}
+.star-metric small{display:block;font-family:var(--sans);font-weight:500;color:var(--muted);font-size:.78rem;margin-top:2px}
+.star-toggle{margin-top:14px;color:var(--navy);font-size:.83rem;font-weight:600;display:flex;align-items:center;gap:6px}
+.star-toggle::after{content:"▾";transition:transform .3s}
+.star-card.open .star-toggle::after{transform:rotate(180deg)}
+.star-body{max-height:0;overflow:hidden;transition:max-height .45s ease;background:#F6F1E6;border-top:1px solid rgba(201,168,76,.35)}
+.star-card.open .star-body{max-height:900px}
+.star-body-inner{padding:20px 24px}
+.star-step{margin-bottom:14px}
+.star-step:last-child{margin-bottom:0}
+.star-step b{display:block;color:var(--navy);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:3px}
+.star-step b::before{content:attr(data-letter);display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;background:var(--gold);color:var(--navy-deep);border-radius:50%;font-size:.7rem;margin-right:8px}
+.star-step p{font-size:.88rem;color:#3B4757}
+
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.skill-box{background:var(--white);border:1px solid rgba(30,58,95,.1);border-top:3px solid var(--gold);border-radius:10px;padding:24px;box-shadow:0 8px 24px rgba(30,58,95,.07)}
+.skill-box h3{font-family:var(--serif);color:var(--navy);font-size:1.05rem;margin-bottom:12px}
+.chip{display:inline-block;background:rgba(30,58,95,.06);color:var(--navy);font-size:.8rem;padding:5px 12px;border-radius:999px;margin:3px 2px}
+.certs{margin-top:34px;background:var(--navy);border-radius:12px;padding:26px 30px;color:#D8DEE6;display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center}
+.certs b{color:var(--gold-light);font-family:var(--serif)}
+.certs span{font-size:.88rem}
+
+/* CONTACT */
+#contact{background:var(--navy-deep);text-align:center}
+#contact h2{font-family:var(--serif);color:var(--white);font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:14px}
+#contact p{color:#AEBBCA;max-width:520px;margin:0 auto 32px}
+.contact-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+footer{background:var(--navy-deep);border-top:1px solid rgba(201,168,76,.2);padding:22px 0;text-align:center;color:#7E8FA1;font-size:.8rem}
+
+/* REVEAL ON SCROLL */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* MOBILE */
+@media(max-width:820px){
+  section{padding:64px 0}
+  .nav-links{position:fixed;top:62px;right:0;background:var(--navy-deep);flex-direction:column;width:220px;padding:20px;gap:16px;transform:translateX(100%);transition:transform .3s;border-left:1px solid rgba(201,168,76,.25);height:calc(100vh - 62px)}
+  .nav-links.open{transform:none}
+  .menu-btn{display:block}
+  .hero-stats{grid-template-columns:repeat(2,1fr);gap:22px;margin-top:44px}
+  .about-grid{grid-template-columns:1fr;gap:32px}
+  .star-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">G<span>.</span> Hubbard</a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#stars">STAR Stories</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#howto">How-To Hacks</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-kicker">MarTech · Digital Transformation · AI-Forward Program Leadership</div>
+    <h1>I turn marketing technology into <em>measurable growth.</em></h1>
+    <p class="lede">12+ years leading MarTech, CDP, and digital transformation programs for brands like Coca-Cola, Meta, Cigna, GM, and Darden — from 0-to-1 platform launches to $10M+ portfolios. Now pairing that record with an M.S. in Artificial Intelligence at Georgetown and AI-embedded delivery that cut reporting cycles 40%.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-gold" href="#stars">See My STAR Stories</a>
+      <a class="btn btn-ghost" href="#experience">View Experience</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="num" data-count="12" data-suffix="+">0</div><div class="lbl">Years leading programs</div></div>
+      <div class="stat"><div class="num" data-count="10" data-prefix="$" data-suffix="M+">0</div><div class="lbl">Portfolio owned</div></div>
+      <div class="stat"><div class="num" data-count="37" data-suffix="%">0</div><div class="lbl">Incremental revenue driven</div></div>
+      <div class="stat"><div class="num" data-count="63" data-suffix="%">0</div><div class="lbl">Operational overhead cut</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- LOGO TICKER -->
+<div class="ticker-band">
+  <div class="ticker-label">Brands I've delivered for</div>
+  <div class="ticker" aria-hidden="true">
+    <span>Coca-Cola</span><span>Meta</span><span>Cigna</span><span>Accenture</span><span>GM · OnStar</span><span>Darden</span><span>Checkers &amp; Rally's</span><span>Omnicom / RAPP</span><span>MRM McCann</span><span>State Farm</span>
+    <span>Coca-Cola</span><span>Meta</span><span>Cigna</span><span>Accenture</span><span>GM · OnStar</span><span>Darden</span><span>Checkers &amp; Rally's</span><span>Omnicom / RAPP</span><span>MRM McCann</span><span>State Farm</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-kicker reveal">About Me</div>
+    <h2 class="sec-title reveal">The person behind the programs</h2>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <!-- HEADSHOT: headshot.png must sit next to this file -->
+        <div class="portrait"><img src="headshot.png" alt="Gwenevere Hubbard" onload="this.parentElement.classList.add('has-img')" onerror="this.style.display='none'"><div class="ph-init">GH</div></div>
+        <p>I'm Gwenevere Hubbard — Mia to most people. I lead programs at the intersection of marketing technology, data, and AI: CDP implementations, platform rollouts, release governance, and the messy cross-functional work that turns roadmaps into shipped outcomes.</p>
+        <p>My career spans top-tier consulting at Accenture (serving Coca-Cola, Meta, and Cigna), enterprise restaurant brands at Darden and Checkers &amp; Rally's, and global program delivery for GM's OnStar. I lead through influence in highly matrixed organizations — aligning 20+ stakeholders across countries, time zones, and competing priorities.</p>
+        <p>Right now I'm pairing that delivery record with an M.S. in Artificial Intelligence at Georgetown, embedding LLM tooling into program workflows — most recently cutting reporting cycle time 40% with generative AI.</p>
+      </div>
+      <div class="about-card reveal">
+        <h3>What I bring to a team</h3>
+        <ul>
+          <li>Platform &amp; technical program ownership — roadmaps, integrations, release governance</li>
+          <li>Cross-functional execution without authority in matrixed orgs</li>
+          <li>Process automation that removes manual overhead (63% reduction)</li>
+          <li>Data-driven prioritization — SQL analysis across 40M+ records</li>
+          <li>Executive communication: QBRs, scorecards, decision-ready narratives</li>
+          <li>Governance &amp; compliance: GDPR, CCPA, HIPAA with zero incidents</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-kicker reveal">Career Journey</div>
+    <h2 class="sec-title reveal">Professional experience</h2>
+    <p class="sec-sub reveal">A decade-plus of delivery leadership across consulting, enterprise brands, and global agencies.</p>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-role">Senior Manager, Technical Program Delivery</div>
+        <div class="tl-org">Omnicom, RAPP</div>
+        <div class="tl-dates">Jan 2026 – Present</div>
+        <ul>
+          <li>Direct multi-workstream technical delivery for Fortune 500 client portfolios across Product, Engineering, Data, and Operations.</li>
+          <li>Reduced reporting cycle time 40% by embedding generative AI and LLM-based tooling into planning and status workflows.</li>
+          <li>Build executive-ready narratives and risk assessments that turn technical trade-offs into decision frameworks.</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-role">Senior Manager, MarTech Program Delivery</div>
+        <div class="tl-org">MRM McCann</div>
+        <div class="tl-dates">Sept 2023 – Dec 2025</div>
+        <ul>
+          <li>Shipped a global platform rollout across the US, Canada, and Mexico 17% ahead of schedule, coordinating 20+ stakeholders.</li>
+          <li>Cut operational overhead 63% and QA cycles 70% through RACI-driven workflows and automated Tableau/Jira/Smartsheet dashboards.</li>
+          <li>Built governance and risk-tracking structures covering a $7M+ technology portfolio.</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-role">Senior Manager, Technology Program Delivery</div>
+        <div class="tl-org">Accenture</div>
+        <div class="tl-dates">Jul 2021 – Aug 2023</div>
+        <ul>
+          <li>Drove strategy-to-execution alignment across SaaS platform programs for Coca-Cola, Meta, and Cigna.</li>
+          <li>Embedded GDPR, CCPA, and HIPAA requirements into program governance — zero compliance incidents.</li>
+          <li>Surfaced risks early through dependency analysis and executive trade-off frameworks.</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-role">Director, CRM, MarTech &amp; Digital Transformation</div>
+        <div class="tl-org">Checkers &amp; Rally's</div>
+        <div class="tl-dates">Oct 2019 – Jun 2021</div>
+        <ul>
+          <li>Owned a $10M+ technology portfolio and its annual investment plan with ROI-based prioritization.</li>
+          <li>Launched Bridg CDP from 0 to 1, unifying customer data for real-time personalization.</li>
+          <li>Grew delivery sales 27% and moved 20K+ consumers to digital ordering via a 0-to-1 eCommerce program.</li>
+        </ul>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-role">Senior Manager, Digital Transformation &amp; Platform Delivery</div>
+        <div class="tl-org">Darden Inc.</div>
+        <div class="tl-dates">Oct 2013 – Sep 2019</div>
+        <ul>
+          <li>Reactivated 18% of dormant consumers and drove 37% incremental revenue at $0.44 CPL from 40M+ contact records.</li>
+          <li>Doubled monthly consumer signups to 30,000 with a 0-to-1 web acquisition feature scaled enterprise-wide.</li>
+          <li>Cut reservation platform costs 30% by migrating from OpenTable to an in-house system.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAR STORIES -->
+<section id="stars">
+  <div class="wrap">
+    <div class="sec-kicker reveal">Proof, Not Promises</div>
+    <h2 class="sec-title reveal">STAR stories</h2>
+    <p class="sec-sub reveal">Real situations, real actions, real results — the interview stories behind the resume bullets. Tap any card to read the full story.</p>
+    <div class="star-legend reveal"><span><b>S</b>ituation</span><span><b>T</b>ask</span><span><b>A</b>ction</span><span><b>R</b>esult</span></div>
+    <div class="filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="leadership">Cross-Functional Leadership</button>
+      <button class="filter-btn" data-filter="growth">Data-Driven Growth</button>
+      <button class="filter-btn" data-filter="ops">Operational Efficiency</button>
+      <button class="filter-btn" data-filter="platform">Platform &amp; Transformation</button>
+    </div>
+    <div class="star-grid">
+
+      <div class="star-card reveal" data-cat="growth">
+        <div class="star-head">
+          <span class="star-tag">Data-Driven Growth</span>
+          <h3>Reactivating 40M dormant contacts</h3>
+          <div class="star-metric">37% <small>incremental revenue at $0.44 CPL</small></div>
+          <div class="star-toggle">Read the full story</div>
+        </div>
+        <div class="star-body"><div class="star-body-inner">
+          <div class="star-step"><b data-letter="S">Situation</b><p>Darden held 40M+ idle contact records with no lifecycle strategy — a massive pool of lapsed customers generating zero revenue.</p></div>
+          <div class="star-step"><b data-letter="T">Task</b><p>Diagnose the lifecycle gap, forecast recoverable demand, and design a reactivation program leadership would fund.</p></div>
+          <div class="star-step"><b data-letter="A">Action</b><p>Ran first-party SQL analysis to segment dormant users by purchase behavior and location, then built a personalized multi-channel journey across email, SMS, and social.</p></div>
+          <div class="star-step"><b data-letter="R">Result</b><p>Reactivated 18% of dormant consumers and drove 37% incremental revenue at just $0.44 cost per lead.</p></div>
+        </div></div>
+      </div>
+
+      <div class="star-card reveal" data-cat="leadership">
+        <div class="star-head">
+          <span class="star-tag">Cross-Functional Leadership</span>
+          <h3>A three-country program in ten weeks</h3>
+          <div class="star-metric">10 weeks <small>to launch across US, Canada &amp; Mexico</small></div>
+          <div class="star-toggle">Read the full story</div>
+        </div>
+        <div class="star-body"><div class="star-body-inner">
+          <div class="star-step"><b data-letter="S">Situation</b><p>GM's OnStar lacked a unified vehicle diagnostics email program and needed one solution serving three countries with localized content in English, French, and Spanish.</p></div>
+          <div class="star-step"><b data-letter="T">Task</b><p>Lead project planning, stakeholder coordination, and the Adobe Workfront platform strategy for the unified program.</p></div>
+          <div class="star-step"><b data-letter="A">Action</b><p>Spearheaded the Jira-to-Workfront transition, built reusable campaign templates and intake forms, defined RACI models per region, and integrated Fusion APIs to automate notifications and reporting.</p></div>
+          <div class="star-step"><b data-letter="R">Result</b><p>Launched in all three countries in 10 weeks, cut recurring meeting time 63%, accelerated QA turnaround 30%, and earned praise from regional GMs for localization quality.</p></div>
+        </div></div>
+      </div>
+
+      <div class="star-card reveal" data-cat="ops">
+        <div class="star-head">
+          <span class="star-tag">Operational Efficiency</span>
+          <h3>Fixing a delivery machine from the inside</h3>
+          <div class="star-metric">70% <small>reduction in QA cycles</small></div>
+          <div class="star-toggle">Read the full story</div>
+        </div>
+        <div class="star-body"><div class="star-body-inner">
+          <div class="star-step"><b data-letter="S">Situation</b><p>Cross-functional inefficiencies — bloated QA rounds, two-hour daily dev meetings, and poor project visibility — were dragging delivery speed and quality.</p></div>
+          <div class="star-step"><b data-letter="T">Task</b><p>Lead process improvements across developers, QA, marketing, creative, and operations without disrupting active delivery.</p></div>
+          <div class="star-step"><b data-letter="A">Action</b><p>Redesigned the daily status Smartsheet around milestones and blockers, implemented new QA protocols, restructured dev meetings to actionable items only, and coached the team on concise updates.</p></div>
+          <div class="star-step"><b data-letter="R">Result</b><p>Cut QA review rounds from 10 to under 3 (a 70% efficiency gain), reduced daily meetings from 2 hours to 45 minutes, and boosted overall team efficiency 63%.</p></div>
+        </div></div>
+      </div>
+
+      <div class="star-card reveal" data-cat="platform">
+        <div class="star-head">
+          <span class="star-tag">Platform &amp; Transformation</span>
+          <h3>Building a CDP from zero to one</h3>
+          <div class="star-metric">0 → 1 <small>unified customer data platform</small></div>
+          <div class="star-toggle">Read the full story</div>
+        </div>
+        <div class="star-body"><div class="star-body-inner">
+          <div class="star-step"><b data-letter="S">Situation</b><p>Checkers &amp; Rally's customer data was fragmented across an aging ESP, limiting personalization and marketing effectiveness.</p></div>
+          <div class="star-step"><b data-letter="T">Task</b><p>Lead the transition to a Customer Data Platform while coordinating IT, brand, and legal teams.</p></div>
+          <div class="star-step"><b data-letter="A">Action</b><p>Audited first, second, and third-party data sources, directed the Bridg CDP integration — API connections, data mapping, real-time updates — and built the technical roadmap for unified data flows.</p></div>
+          <div class="star-step"><b data-letter="R">Result</b><p>Centralized customer data across every touchpoint, enabling real-time personalization and measurably stronger campaign performance.</p></div>
+        </div></div>
+      </div>
+
+      <div class="star-card reveal" data-cat="growth">
+        <div class="star-head">
+          <span class="star-tag">Data-Driven Growth</span>
+          <h3>Doubling signups with a 0-to-1 feature</h3>
+          <div class="star-metric">2× <small>monthly signups — 15K to 30K</small></div>
+          <div class="star-toggle">Read the full story</div>
+        </div>
+        <div class="star-body"><div class="star-body-inner">
+          <div class="star-step"><b data-letter="S">Situation</b><p>Website membership growth had stagnated at 15,000 signups per month, limiting the digital audience the brand could market to.</p></div>
+          <div class="star-step"><b data-letter="T">Task</b><p>Design and validate an acquisition strategy that could scale enterprise-wide.</p></div>
+          <div class="star-step"><b data-letter="A">Action</b><p>Built a web acquisition feature with behavioral trigger logic, custom landing pages, and UX optimizations informed by Google Analytics — piloted on a single brand before scaling.</p></div>
+          <div class="star-step"><b data-letter="R">Result</b><p>Doubled monthly consumer signups to 30,000 and rolled the validated playbook out across the enterprise.</p></div>
+        </div></div>
+      </div>
+
+      <div class="star-card reveal" data-cat="platform">
+        <div class="star-head">
+          <span class="star-tag">Platform &amp; Transformation</span>
+          <h3>Pivoting eCommerce mid-pandemic</h3>
+          <div class="star-metric">27% <small>increase in delivery sales</small></div>
+          <div class="star-toggle">Read the full story</div>
+        </div>
+        <div class="star-body"><div class="star-body-inner">
+          <div class="star-step"><b data-letter="S">Situation</b><p>The pandemic created unpredictable swings in delivery demand, threatening sales continuity across the franchise system.</p></div>
+          <div class="star-step"><b data-letter="T">Task</b><p>Build a delivery strategy flexible enough to respond to shifting lockdown conditions in real time.</p></div>
+          <div class="star-step"><b data-letter="A">Action</b><p>Designed an on/off dynamic delivery strategy synced to real-time conditions, and drove digital adoption campaigns that moved loyalty members onto ordering platforms.</p></div>
+          <div class="star-step"><b data-letter="R">Result</b><p>Grew delivery sales 27% during the most volatile period in the industry and transitioned 20,000+ loyalty members to digital ordering.</p></div>
+        </div></div>
+      </div>
+
+      <div class="star-card reveal" data-cat="leadership">
+        <div class="star-head">
+          <span class="star-tag">Cross-Functional Leadership</span>
+          <h3>Co-marketing across two giants</h3>
+          <div class="star-metric">B2B <small>GM OnStar × State Farm partnership</small></div>
+          <div class="star-toggle">Read the full story</div>
+        </div>
+        <div class="star-body"><div class="star-body-inner">
+          <div class="star-step"><b data-letter="S">Situation</b><p>State Farm's low-mileage customer segment was an untapped opportunity for OnStar and SiriusXM service expansion.</p></div>
+          <div class="star-step"><b data-letter="T">Task</b><p>Lead a B2B co-marketing initiative communicating the value of bundling OnStar and SiriusXM with State Farm's insurance offerings.</p></div>
+          <div class="star-step"><b data-letter="A">Action</b><p>Orchestrated a joint campaign with State Farm — incentivized messaging and co-branded content showcasing the integrated benefits of bundled services.</p></div>
+          <div class="star-step"><b data-letter="R">Result</b><p>Boosted engagement in the target segment, increased adoption of OnStar and SiriusXM services, and drove measurable growth in partner satisfaction.</p></div>
+        </div></div>
+      </div>
+
+      <div class="star-card reveal" data-cat="ops">
+        <div class="star-head">
+          <span class="star-tag">Operational Efficiency</span>
+          <h3>Email program that found its audience</h3>
+          <div class="star-metric">8.6% → 15.6% <small>email open rate in 90 days</small></div>
+          <div class="star-toggle">Read the full story</div>
+        </div>
+        <div class="star-body"><div class="star-body-inner">
+          <div class="star-step"><b data-letter="S">Situation</b><p>Email campaigns had low engagement and weren't driving meaningful customer interaction or sales.</p></div>
+          <div class="star-step"><b data-letter="T">Task</b><p>Revitalize email marketing performance across the brand.</p></div>
+          <div class="star-step"><b data-letter="A">Action</b><p>Rolled out a lifecycle email framework — Welcome Series, behavior-triggered messages, and advanced audience segmentation.</p></div>
+          <div class="star-step"><b data-letter="R">Result</b><p>Nearly doubled open rates from 8.6% to 15.6% in 90 days, proving content relevance and targeting precision.</p></div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-kicker reveal">Toolkit</div>
+    <h2 class="sec-title reveal">Skills &amp; certifications</h2>
+    <div class="skills-grid">
+      <div class="skill-box reveal"><h3>Program &amp; Portfolio</h3>
+        <span class="chip">Jira</span><span class="chip">Smartsheet</span><span class="chip">Asana</span><span class="chip">Workfront</span><span class="chip">Confluence</span><span class="chip">SAFe / Agile</span><span class="chip">RACI Governance</span></div>
+      <div class="skill-box reveal"><h3>Analytics &amp; BI</h3>
+        <span class="chip">SQL</span><span class="chip">Tableau</span><span class="chip">Power BI</span><span class="chip">Looker</span><span class="chip">Snowflake</span><span class="chip">Google Analytics</span></div>
+      <div class="skill-box reveal"><h3>AI &amp; Generative Tooling</h3>
+        <span class="chip">Claude</span><span class="chip">ChatGPT</span><span class="chip">Copilot</span><span class="chip">Gemini</span><span class="chip">LLM &amp; RAG Workflows</span><span class="chip">Prompt Design</span></div>
+      <div class="skill-box reveal"><h3>Platform &amp; Data</h3>
+        <span class="chip">APIs &amp; Integrations</span><span class="chip">Python</span><span class="chip">Salesforce</span><span class="chip">Adobe Campaign</span><span class="chip">Braze</span><span class="chip">Segment CDP</span><span class="chip">Bridg CDP</span></div>
+    </div>
+    <div class="certs reveal">
+      <b>Certifications &amp; Education</b>
+      <span>SAFe 5/6 Agile Product Manager</span><span>Scrum Master</span><span>Adobe Certified Professional</span><span>Braze Certified Practitioner</span>
+      <span>M.S. Artificial Intelligence — Georgetown (in progress)</span><span>B.S. Software Engineering — University of Michigan</span>
+    </div>
+  </div>
+</section>
+
+<!-- HOW-TO HACKS -->
+<section id="howto" style="background:var(--white)">
+  <div class="wrap">
+    <div class="sec-kicker reveal">Beyond the Day Job</div>
+    <h2 class="sec-title reveal">Mia's How-To Hacks</h2>
+    <p class="sec-sub reveal">I don't just use AI at work — I teach it. My tutorial series shows job seekers how to use Claude to land their next role: resume tailoring, ATS optimization, recruiter follow-up workflows, and multi-board job searches.</p>
+    <div class="skills-grid">
+      <div class="skill-box reveal">
+        <h3>Claude Tutorial Series</h3>
+        <p style="font-size:.9rem;color:#3B4757;margin-bottom:14px">Short-form video tutorials pairing Claude with real job-search tasks — from one-prompt multi-board searches to AI-personalized thank-you emails.</p>
+        <a class="btn btn-gold" style="padding:10px 20px;font-size:.85rem" href="https://www.linkedin.com/in/mia01" target="_blank" rel="noopener">Watch on LinkedIn</a>
+      </div>
+      <div class="skill-box reveal">
+        <h3>Digital Products</h3>
+        <p style="font-size:.9rem;color:#3B4757;margin-bottom:14px">Guides, prompt packs, and playbooks for job seekers who want to put AI to work in their search — available in my storefront.</p>
+        <a class="btn btn-gold" style="padding:10px 20px;font-size:.85rem" href="https://payhip.com/MiasHowToHacks" target="_blank" rel="noopener">Visit the Store</a>
+      </div>
+      <div class="skill-box reveal">
+        <h3>The Jobseeker Playbook</h3>
+        <p style="font-size:.9rem;color:#3B4757;margin-bottom:14px">My end-to-end system for running a modern, AI-assisted job search — the same workflows I use myself.</p>
+        <a class="btn btn-gold" style="padding:10px 20px;font-size:.85rem" href="https://lnkd.in/gM7TthXk" target="_blank" rel="noopener">Get the Playbook</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap reveal">
+    <h2>Let's build something measurable.</h2>
+    <p>I'm open to senior MarTech, digital transformation, and AI-forward program leadership roles. If my stories resonate with what your team needs, reach out.</p>
+    <div class="contact-links">
+      <a class="btn btn-gold" href="mailto:gwenhubbard@icloud.com">Email Me</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/mia01" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Gwenevere Hubbard · Built with Claude &amp; hosted free on GitHub Pages</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Reveal on scroll
+const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// Count-up hero stats
+const statIO = new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return;
+  const el=e.target, end=+el.dataset.count, pre=el.dataset.prefix||'', suf=el.dataset.suffix||'';
+  let t0=null;
+  const step=ts=>{if(!t0)t0=ts;const p=Math.min((ts-t0)/1200,1);el.textContent=pre+Math.round(end*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(step)};
+  requestAnimationFrame(step); statIO.unobserve(el);
+}),{threshold:.5});
+document.querySelectorAll('.stat .num').forEach(el=>statIO.observe(el));
+
+// STAR card expand
+document.querySelectorAll('.star-head').forEach(h=>h.addEventListener('click',()=>h.closest('.star-card').classList.toggle('open')));
+
+// STAR filters
+document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const f=btn.dataset.filter;
+  document.querySelectorAll('.star-card').forEach(c=>{
+    c.style.display=(f==='all'||c.dataset.cat===f)?'':'none';
+  });
+}));
+
+// Close mobile menu on link click
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open')));
+</script>
+</body>
+</html>
