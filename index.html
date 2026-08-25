@@ -135,6 +135,18 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .certs b{color:var(--gold-light);font-family:var(--serif)}
 .certs span{font-size:.88rem}
 
+/* AWARDS */
+#awards{background:linear-gradient(180deg,var(--navy),var(--navy-deep))}
+#awards .sec-kicker{color:var(--gold-light)}
+#awards h2.sec-title{color:var(--white)}
+#awards .sec-sub{color:#AEBBCA}
+.awards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.award{display:flex;gap:18px;align-items:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(201,168,76,.28);border-radius:10px;padding:20px 22px;transition:transform .25s,border-color .25s}
+.award:hover{transform:translateY(-3px);border-color:var(--gold)}
+.award-year{font-family:var(--serif);color:var(--gold);font-size:1.4rem;font-weight:700;line-height:1;min-width:66px}
+.award-name{color:var(--white);font-weight:600;font-size:.98rem;line-height:1.35}
+.award-org{color:#9FB0C1;font-size:.83rem;margin-top:4px}
+
 /* CONTACT */
 #contact{background:var(--navy-deep);text-align:center}
 #contact h2{font-family:var(--serif);color:var(--white);font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:14px}
@@ -169,6 +181,7 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(201,168,76,.2);padd
       <li><a href="#experience">Experience</a></li>
       <li><a href="#stars">STAR Stories</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#awards">Awards</a></li>
       <li><a href="#howto">How-To Hacks</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -451,6 +464,23 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(201,168,76,.2);padd
       <b>Certifications &amp; Education</b>
       <span>SAFe 5/6 Agile Product Manager</span><span>Scrum Master</span><span>Adobe Certified Professional</span><span>Braze Certified Practitioner</span>
       <span>M.S. Artificial Intelligence, Georgetown (in progress)</span><span>B.S. Software Engineering, University of Michigan</span>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section id="awards">
+  <div class="wrap">
+    <div class="sec-kicker reveal">Recognition</div>
+    <h2 class="sec-title reveal">Awards &amp; accolades</h2>
+    <p class="sec-sub reveal">Industry and enterprise recognition across two decades of marketing technology and customer experience work.</p>
+    <div class="awards-grid">
+      <div class="award reveal"><div class="award-year">2020</div><div><div class="award-name">ANA Genius Award Finalist</div><div class="award-org">Category: Marketing Analytics Growth</div></div></div>
+      <div class="award reveal"><div class="award-year">2016</div><div><div class="award-name">Information Week Elite 100</div><div class="award-org">National technology leadership ranking</div></div></div>
+      <div class="award reveal"><div class="award-year">2014</div><div><div class="award-name">Brilliance Award</div><div class="award-org">Darden Inc.</div></div></div>
+      <div class="award reveal"><div class="award-year">2010</div><div><div class="award-name">Gold CRM Excellence Award</div><div class="award-org">Gartner, Inc.</div></div></div>
+      <div class="award reveal"><div class="award-year">2008</div><div><div class="award-name">President's Ovation Award</div><div class="award-org">OnStar</div></div></div>
+      <div class="award reveal"><div class="award-year">1998</div><div><div class="award-name">Summa Cum Laude Graduate</div><div class="award-org">University of Michigan</div></div></div>
     </div>
   </div>
 </section>
