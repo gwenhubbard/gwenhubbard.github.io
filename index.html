@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gwenevere "Mia" Hubbard | MarTech, MarOps, Digital Transformation &amp; AI</title>
-<meta name="description" content="12+ years unlocking business growth where marketing technology, marketing operations, digital transformation, and AI converge. Explore 12 proof stories.">
+<meta name="description" content="12+ years unlocking business growth where MarTech, MarOps, Digital Transformation, and AI converge. Explore 12 proof stories.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(251,250,247,
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
 .brand{font-family:var(--serif);font-size:1.3rem;text-decoration:none;color:var(--ink);letter-spacing:-.01em}
 .brand i{font-style:italic;color:var(--accent)}
-.nav-links{display:flex;gap:30px;list-style:none;align-items:center}
+.nav-links{display:flex;gap:22px;list-style:none;align-items:center}
 .nav-links a{color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:500;position:relative;padding:4px 0}
 .nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--accent);transition:right .3s}
 .nav-links a:hover::after{right:0}
@@ -190,10 +190,13 @@ footer p{font-size:.76rem;color:#6E7686}
 .rv.in{opacity:1;transform:none}
 
 /* RESPONSIVE */
+@media(max-width:1090px){
+  .nav-links{gap:15px}
+  .nav-links a{font-size:.78rem}
+  .nav-cta{padding:8px 13px}
+  .brand{font-size:1.15rem}
+}
 @media(max-width:1000px){
-  .nav-links{gap:18px}
-  .nav-links a{font-size:.8rem}
-  .nav-cta{padding:8px 14px}
   .star-grid{grid-template-columns:repeat(2,1fr)}
   .sk-grid{grid-template-columns:repeat(2,1fr);gap:34px}
   .hk-grid{grid-template-columns:1fr}
@@ -206,16 +209,21 @@ footer p{font-size:.76rem;color:#6E7686}
   .portrait-frame{max-width:300px}
   .ct-grid{grid-template-columns:1fr;gap:40px;align-items:start}
 }
+@media(max-width:900px){
+  .nav-links{position:fixed;top:66px;left:0;right:0;background:var(--paper);flex-direction:column;align-items:flex-start;gap:0;padding:10px 26px 24px;border-bottom:1px solid var(--line);transform:translateY(-140%);transition:transform .35s;height:auto;max-height:calc(100vh - 66px);overflow-y:auto}
+  .nav-links.open{transform:none}
+  .nav-links li{width:100%;border-bottom:1px solid var(--line)}
+  .nav-links li:last-child{border:none;padding-top:14px}
+  .nav-links a{display:block;padding:13px 0;font-size:.95rem}
+  .nav-cta{display:inline-block;padding:11px 20px}
+  .menu-btn{display:block}
+  .brand{font-size:1.25rem}
+}
 @media(max-width:720px){
   .wrap{padding:0 22px}
   section{padding:74px 0}
   .hero{padding:140px 0 0}
-  .nav-links{position:fixed;top:66px;left:0;right:0;background:var(--paper);flex-direction:column;align-items:flex-start;gap:0;padding:14px 22px 26px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .35s;height:auto}
-  .nav-links.open{transform:none}
-  .nav-links li{width:100%;border-bottom:1px solid var(--line)}
-  .nav-links li:last-child{border:none;padding-top:14px}
-  .nav-links a{display:block;padding:14px 0;font-size:.95rem}
-  .menu-btn{display:block}
+  .nav-links{padding:10px 22px 24px}
   .hero-stats{grid-template-columns:repeat(2,1fr);margin-top:56px}
   .hstat{border-bottom:1px solid var(--line);padding:22px 18px 22px 0}
   .hstat:nth-child(2){border-right:none}
@@ -240,6 +248,7 @@ footer p{font-size:.76rem;color:#6E7686}
       <li><a href="#proof">Proof</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#recognition">Recognition</a></li>
+      <li><a href="#skills">Toolkit</a></li>
       <li><a href="#howto">How-To Hacks</a></li>
       <li><a href="#contact" class="nav-cta">Get in touch</a></li>
     </ul>
@@ -658,7 +667,7 @@ footer p{font-size:.76rem;color:#6E7686}
       <div class="rv">
         <div class="eyebrow">Contact</div>
         <h2>Let's build something that <i>compounds.</i></h2>
-        <p>I am open to senior MarTech, marketing operations, digital transformation, and AI-forward program leadership roles. If the convergence is the problem you are solving for, we should talk.</p>
+        <p>I am open to senior MarTech, MarOps, Digital Transformation, and AI-forward program leadership roles. If the convergence is the problem you are solving for, we should talk.</p>
       </div>
       <div class="ct-links rv">
         <a href="mailto:gwenhubbard@icloud.com"><span>Email</span> gwenhubbard@icloud.com</a>
